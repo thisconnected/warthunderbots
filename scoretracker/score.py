@@ -6,4 +6,6 @@ import configparser
 
 
 config = configparser.ConfigParser()
-url = "https://warthunder.com/en/community/claninfo/" + 
+config.read("../config.ini")
+
+url = "https://warthunder.com/en/community/claninfo/" + config['OPTIONS']['squadron']
